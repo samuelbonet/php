@@ -98,6 +98,98 @@ else
     echo "Es impar";
 ?>
 
+<?php
+function bisiesto (int $year):bool{
+    $bisiesto=false;
+    if (($year %4==0) && ($year%100!=0) || ($year %400==0))
+    $bisiesto=true;
+return $bisiesto;
+}
+//obtengo los valores
+$dia = rand (1,33);
+$mes = rand(1,13);
+$year = rand (1000,2100);
+
+$fecha = "$dia/$mes/$year";
+
+$nombre =null;
+$error = false;
+switch ($mes) {
+    case 1:
+        if ($nombre ==null)
+            $nombre="enero";
+    case 3:
+        if ($nombre ==null)
+            $nombre="marzo";
+    case 5:
+        if ($nombre ==null)
+            $nombre="mayo";
+    case 7:
+        if ($nombre ==null)
+            $nombre="julio";
+    case 8:
+        if ($nombre ==null)
+            $nombre="agosto";
+    case 10:;
+        if ($nombre ==null)
+            $nombre="octubre";
+    case 12:
+        if ($dia > 31)
+            $error = "Error: El mes $mes no tiene $dia, solo hasta 31";
+        break;
+    case 4:
+        if ($nombre ==null)
+            $nombre="abril";
+    case 6:
+        if ($nombre ==null)
+            $nombre="junio";
+    case 9:
+        if ($nombre ==null)
+            $nombre="septiembre";
+    case 11:
+        if ($dia > 30)
+            $error = "Error: El mes $mes no tiene $dia, solo hasta 30";
+        break;
+    case 2:
+        if (bisiesto($year) == true){
+            if ($dia > 29)
+                $error = "Error: El mes $mes no tiene $dia , solo hasta 29 ($year es bisiesto)";
+}else
+        if ($dia > 28)
+            $error = "Error: El mes $mes no tiene $dia , solo hasta 28 ($year es bisiesto)";
+break;
+default:
+    $error = "Error , un año solo tiene 12 meses y no $mes meses";
+}
+
+
+
+?>
+
+<<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<?php if ($error==false) {
+    echo "La fecha $fecha es correcta";
+}
+else{
+    echo "<h1>La fecha $fecha no es correcta</h1>";
+    echo "<h1>Error encontrado $error</h1>";
+}
+?>
+
+
+</body>
+</html>
+
+
 
 
 
