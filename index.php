@@ -183,6 +183,15 @@ else{
     echo "<h1>La fecha $fecha no es correcta</h1>";
     echo "<h1>Error encontrado $error</h1>";
 }
+    
+$frase ="Hola";
+$letra ="s";
+
+$pos= strpos($frase , $letra);
+if ($pos!==false)
+    echo "Esta $letra de la frase $frase esta en la posicion $pos";
+    else
+        echo "No esta $letra de la frase $frase esta en la posicion $pos";
 ?>
 
 
