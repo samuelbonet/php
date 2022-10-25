@@ -199,6 +199,43 @@ if ($pos!==false)
 </html>
 
 
+-----------------------TABLA---------------------------
+
+<?php
+$tabla =rand (1,100);
+
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<table border =1>
+    <caption>Tabla del <?=$tabla?> </caption>
+
+    <?php
+    $contador=0;
+    while ($contador < 100) {
+        $resultado=$tabla * $contador;
+
+        echo "<tr><td>$tabla</td>
+            <td>*</td>
+            <td>$contador</td>
+            <td>". ( $tabla * $contador) ." </td>
+</tr>";
+    }
+
+    ?>
+
+>?
+</body>
+</html>
 
 
 
