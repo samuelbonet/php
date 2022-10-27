@@ -83,3 +83,15 @@ switch ( $edad ) {
 
 }*/
 ?>
+
+
+<?php
+$nombre="Samuel";    // Variable de tipo string
+    $fechaNacimiento = new DateTime("2000-02-12");// Variable de tipo DateTime
+    $fechaActual = new DateTime();// Variable de tipo DateTime
+    $edad = $fechaActual->diff($fechaNacimiento);// Variable de tipo DateInterval
+    echo  $edad->y. " años tiene $nombre";
+
+
+?>
+
