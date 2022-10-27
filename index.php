@@ -238,8 +238,12 @@ $tabla =rand (1,100);
 </html>
 
 
-
-
+------------------------------------------DATE-------------------------------------------
+$fecha=02/12/2000;
+$segundos=strtotime($fecha);
+$segundos =time() -$segundos;
+$dias =$segundos/(24*60*60);
+$year= $dias /365;
 
 
 
