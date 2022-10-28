@@ -95,3 +95,31 @@ $nombre="Samuel";    // Variable de tipo string
 
 ?>
 
+$fecha_nacimiento="10/29/2000";
+$fechaActual=date(format: "d/m/Y");
+
+$fecha_nacimiento=strtotime($fecha_nacimiento);
+
+$anyoActual =date(format: "Y", time());
+$anyoNacimiento=date(format:"Y",fecha_nacimiento);
+
+$anyoNacimiento=date(format: "Y", $fecha_nacimiento);
+
+
+
+$mes_actual =date (format: "m");
+$mes_nacimiento=date(format: "m" , $fecha_nacimiento);
+
+$dia_actual =date (format: "d");
+$dia_nacimiento=date(format: "d" , $fecha_nacimiento);
+
+$edad=$anyoActual-$anyoNacimiento;
+
+if ($mes_nacimiento>$mes_actual)
+    $edad--;
+else{
+if ($mes_nacimiento==$mes_actual)
+    if ($dia_nacimiento >$dia_actual)
+        $edad--;
+}
+
