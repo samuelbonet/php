@@ -123,3 +123,10 @@ if ($mes_nacimiento==$mes_actual)
         $edad--;
 }
 
+setlocale(LC_ALL,"fr_FR");
+$texto_fecha=strftime("%A");
+
+for ($n=0;$n<7;$n++){
+    $texto_fecha=strftime ("%A",timestamp:time() +($n *24*60*60) );
+    echo "<h1>$texto_fecha</h1>";
+}
