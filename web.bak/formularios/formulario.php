@@ -21,11 +21,9 @@
 <fieldset style ="width: 50% ; margin: 50px; background:beige">
     <legend>Datos personales </legend>
 
+
+
 <form action ="datos.php">
-    <label for="name">Nombre</label>
-
-
-
 <input type "submit" value="Enviar">
 
 

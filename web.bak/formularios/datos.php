@@ -1,11 +1,6 @@
 <?php
 
 
-
-
-
-
-
 ?>
 
 <!doctype html>
@@ -18,22 +13,7 @@
     <title>Document</title>
 </head>
 <body>
-<fieldset style ="width: 50% ; margin: 50px; background:beige">
-    <legend>Datos personales </legend>
+<h1>Listado de datos</h1>
 
-<form action ="datos.php">
-    <label for="name">Nombre</label>
-
-
-
-<input type "submit" value="Enviar">
-
-
-
-</form>
-
-</fieldset>
-
-
-      </body>
+</body>
 </html>

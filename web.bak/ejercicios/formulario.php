@@ -18,22 +18,11 @@
     <title>Document</title>
 </head>
 <body>
-<fieldset style ="width: 50% ; margin: 50px; background:beige">
-    <legend>Datos personales </legend>
-
-<form action ="datos.php">
-    <label for="name">Nombre</label>
+    <h1>Listado de datos</h1>
+    <form action =
 
 
 
-<input type "submit" value="Enviar">
 
-
-
-</form>
-
-</fieldset>
-
-
-      </body>
+</body>
 </html>
