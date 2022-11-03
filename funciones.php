@@ -1,6 +1,23 @@
 <?php
-$variable="hola";
-echo "La $variable es";
+$num =rand(1,100);
+
+echo "Antes de invocar \$num vale $num";
+
+echo "Cuadrado del par de $num es ".calculaCuadrado($num);
+echo "Despues de invocar \$num vale $num";
+
+function calculaCuadrado(int &$num ) :int {
+
+    //global $nombre ="samuel"; para globalizar (general)
+    $num ++;
+    if ($num %2!==0)
+        $num ++;
+    return $num * $num;
+
+
+}
+
+
 ?>
 <!doctype html>
 <html lang="es">
