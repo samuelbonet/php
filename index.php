@@ -29,13 +29,13 @@ SOFTWARE.
 *** OPTIONS ***/
 
 	// TITLE OF PAGE
-	$title = "List of Files";
+	$title = "PHP";
 	
 	// STYLING (light or dark)
-	$color	= "light";
+	$color	= "dark";
 	
 	// ADD SPECIFIC FILES YOU WANT TO IGNORE HERE
-	$ignore_file_list = array( ".htaccess", "Thumbs.db", ".DS_Store", "index.php", "flat.png");
+	$ignore_file_list = array(".git","README.md",".idea", ".htaccess", "Thumbs.db", ".DS_Store", "index.php", "flat.png");
 	
 	// ADD SPECIFIC FILE EXTENSIONS YOU WANT TO IGNORE HERE, EXAMPLE: array('psd','jpg','jpeg')
 	$ignore_ext_list = array( );
@@ -51,7 +51,7 @@ SOFTWARE.
 	$toggle_sub_folders = true;
 	
 	// FORCE DOWNLOAD ATTRIBUTE
-	$force_download = true;
+	$force_download = false;
 	
 	// IGNORE EMPTY FOLDERS
 	$ignore_empty_folders = true;
