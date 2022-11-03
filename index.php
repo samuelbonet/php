@@ -323,3 +323,79 @@ build_blocks( $items, false );
 </body>
 </html>
 
+
+---------------------------------------------FUNCIONES---------------------------------
+
+
+<?php
+$num =rand(1,100);
+
+echo "Antes de invocar \$num vale $num";
+
+echo "Cuadrado del par de $num es ".calculaCuadrado($num);
+echo "Despues de invocar \$num vale $num";
+
+function calculaCuadrado(int &$num ) :int {
+
+    //global $nombre ="samuel"; para globalizar (general)
+    $num ++;
+    if ($num %2!==0)
+        $num ++;
+    return $num * $num;
+
+
+}
+
+<?php
+
+
+
+
+function calcularMayor() :int {
+    $num1=23;
+    $num2=5;
+
+    if ($num1>$num2)
+        echo "El numero mayor es $num1";
+    else
+        echo "El numero menor es $num2";
+
+
+}
+calcularMayor();
+
+
+
+
+
+
+?>
+
+
+
+
+<?php
+
+
+
+function calculaPar() :int {
+
+    $num =rand(1,100);
+    if ($num %2==0)
+         echo "El numero es par";
+    else
+        echo "El numero es impar";
+
+
+}
+calcularPar();
+
+
+
+
+
+
+
+?>
+
+
